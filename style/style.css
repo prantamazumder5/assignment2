@@ -21,6 +21,7 @@ header{
 footer{
         max-width: 1440px;
         margin: 0 auto;
+        background-color: lightblue;
 }
 
 
@@ -36,7 +37,7 @@ footer{
         color: skyblue;
 }
 .pest{
-        color: rgb(5, 212, 223);
+        color: rgb(83, 128, 253);
 
 }
 .hsla{
@@ -83,7 +84,9 @@ footer{
        border: none;
        width: 197px;
 }
-
+.btn-primary :hover{
+        color: #000;
+}
 
 /* banner */
 
@@ -210,7 +213,7 @@ footer{
 
 
 /* our stories    */
-.story-card{
+.story-card1{
         display: flex;
         border-radius: 50%;
         text-align: center;
@@ -221,7 +224,13 @@ footer{
 
 
 }
-
+.story-card{
+        display: flex;
+        border-radius: 50%;
+        text-align: center;
+        align-items: center;
+        font-size: 1.25rem;
+}
 
 .story-btn{
         background-color: rgb(60, 216, 232);
@@ -286,17 +295,18 @@ footer{
     gap: 15px;
 }
   /* footer  */
+
 .footer-container{
+
+        display: flex;
         justify-content: space-between;
+        margin-top: 15%;
 }
-
-
-  
 /* responsiv for mobile phone */
 
 
 @media screen and (max-width: 576px) {
-        #logo-name, .btn-primary, .nav-link, .arrow-btn{
+        #logo-name, .btn-primary, .nav-link, .arrow-btn, .story-card{
                 display: none;
         }
  #btn-icon{
@@ -319,6 +329,7 @@ footer{
 
  }
 
+
  .Stories-titel, .banner-item, 
  #btn{
          text-align: center;
@@ -330,12 +341,18 @@ footer{
         .Curriculum-titel{
                 font-size: 35px;
         }
-        .card-container{
+        .card-container,.footer-container{
                 flex-direction: column;
                 gap: 25px;
 
         }
- 
+        .story-card1,{
+                grid-template-columns: (2,1fr);
+               
+            
+
+
+        }
 
 
 }
